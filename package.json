@@ -1,13 +1,18 @@
 {
   "name": "dasbodh",
   "version": "1.0.0",
-  "description": "",
+  "description": "This is api for providing shlokas from Dasbodh",
   "scripts": {
     "start": "func start",
     "test": "echo \"No tests yet...\""
   },
   "dependencies": {
     "fs": "0.0.1-security"
+  },
+  "license": "ISC",
+  "repository": {
+    "type" : "git",
+    "url" : "https://github.com/maswadkar/dasbodh.git"
   },
   "devDependencies": {}
 }
