@@ -1,9 +1,9 @@
 
 var fs = require('fs');
-var bychapter = "Please provide Chapter Number"
 
 module.exports = async function (context, req) {
 
+    var bychapter = "Please provide Chapter Number"
     if(req.query.chapter){
     console.log(req.query.chapter)
     data = JSON.parse(fs.readFileSync('data/dasbodh.json', 'utf8'))
