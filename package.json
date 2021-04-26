@@ -4,7 +4,7 @@
   "description": "This is api for providing shlokas from Dasbodh",
   "scripts": {
     "start": "func start",
-    "test": "echo \"No tests yet...\""
+    "test": "mocha"
   },
   "dependencies": {
     "fs": "0.0.1-security"
@@ -14,5 +14,8 @@
     "type": "git",
     "url": "https://github.com/maswadkar/dasbodh.git"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "chai": "^4.3.4",
+    "mocha": "^8.3.2"
+  }
 }

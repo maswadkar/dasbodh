@@ -12,7 +12,7 @@ module.exports = async function (context, myTimer) {
         console.log('statusCode:', res.statusCode);
         console.log('headers:', res.headers);
         res.on('data', (d) => {
-            process.stdout.write(d);
+            //process.stdout.write(d);
             context.log('JavaScript timer trigger function ran!', timeStamp);
         });
     }).on('error', (e) => {
