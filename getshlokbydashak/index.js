@@ -9,7 +9,7 @@ module.exports = async function (context, req) {
     data = JSON.parse(fs.readFileSync('data/dasbodh.json', 'utf8'))
 
     function contains(value) {
-        return value.chapter == req.query.chapter;
+        return (value.chapter == req.query.chapter) && (value.paragraph == req.query.paragraph);
     }
 
     bychapter = data.filter(contains)
