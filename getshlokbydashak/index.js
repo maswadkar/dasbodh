@@ -12,7 +12,7 @@ module.exports = async function (context, req) {
             return (value.chapter == req.query.chapter) && (value.paragraph == req.query.paragraph);
         }
 
-        bychapter = data.filter(contains)
+        bychapter = data.filter(contains).map(({ dashak, samas, shlok }) => ({ dashak, samas, shlok }))
 
     } else {
         console.log("Blank")
